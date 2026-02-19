@@ -21,6 +21,7 @@ export default function DataPage({ display, setDisplay, yearSearchOption, setYea
         <label className="p-3" htmlFor="iyearSearch">
           search by iyear{" "}
           <select onChange={e => setYearSearchOption(e.target.value)}>
+            <option className="border" value=""></option>
             <option value="greater">greater</option>
             <option value="less">less</option>
           </select>
